@@ -26,7 +26,7 @@ Write down the following sql statements that are required to solve the following
 /dt
 
 2. Show all the users. 
-
+---
 
 3. Show all the data in the owners table.
 SELECT * FROM owners;
@@ -66,10 +66,10 @@ INSERT INTO properties (company, units) VALUES ('Archstone', 20)
 DELETE FROM owners WHERE name = 'Janet'
 
 15. Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5. 
-
+SELECT * FROM properties ORDER BY name ASC WHERE name NOT IN ('Archstone') AND id NOT IN (3,5);
 
 16. Count the total number of rows in the properties table.
-
+---
 
 17. Show the highest age of all owners.
 SELECT MAX age FROM owners;
@@ -78,9 +78,11 @@ SELECT MAX age FROM owners;
 SELECT * FROM owners LIMIT 3;
 
 19. Create a foreign key that references the owner_id in the owners table and forces the constraint ON DELETE NO ACTION. 
-
+---
 
 20. Show all of the information from the owners table and the properties table in one joined table.  
+---
+
 ```
 Bonus (this might require you to look up documentation online)
 
