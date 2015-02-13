@@ -26,7 +26,7 @@ Write down the following sql statements that are required to solve the following
 /dt
 
 2. Show all the users. 
----
+/d+ owners
 
 3. Show all the data in the owners table.
 SELECT * FROM owners;
